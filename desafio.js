@@ -9,9 +9,9 @@ app.use(function(req, res, next){
 });
 
 app.get("/",function(req,res){
-    res.send('hello world')
+     res.sendFile(__dirname+"/hora.html")
+    
 })
-
 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {

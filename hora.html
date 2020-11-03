@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="hora()">
+    <script>
+        function hora() {
+            agora = new Date()
+            var minuto =agora.getMinutes
+            
+            if(minuto<10){
+                minuto = "0"+agora.getMinutes()
+            }else
+            minuto=agora.getMinutes()
+
+            document.write("Hello World "+" Hora " + agora.getHours() + ":" + agora.getMinutes())
+        }
+    </script>
+</body>
+
+</html>
